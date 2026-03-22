@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: flight-search-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airline_db
+    username: airline_user
+    password: airline_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: airline_redis_pass
